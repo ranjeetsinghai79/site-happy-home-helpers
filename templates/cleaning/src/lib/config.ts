@@ -2,109 +2,61 @@ import type { SiteConfig } from "@core/web/types"
 
 export const config: SiteConfig = {
   business: {
-  city: "Tracy",
-  theme: "ocean",
-  niche: "cleaning",
-  name: "Sparkle Clean Co.",
-  tagline: "Spotless Home. Zero Stress.",
-  phone: "(555) 789-0123",
-  phoneHref: "tel:+15557890123",
-  email: "hello@sparkleclean.com",
-  address: "Tracy, California",
-  serviceAreas: ["Tracy", "Stockton", "Manteca", "Lathrop", "Mountain House", "Ripon"],
-  license: "CA Business #789012",
-  since: "2012",
-  google_rating: "4.9",
-  review_count: "523",
-  emergency: false,
-  social: { google: "https://google.com", yelp: "https://yelp.com", facebook: "https://facebook.com" },
-},
+    name: "Happy Home Helpers",
+    tagline: "Sparkling Homes, Happy Lives",
+    phone: "(702) 224-2944",
+    phoneHref: "tel:+17022242944",
+    email: "info@happyhomehelpers.com",
+    address: "123 Main St",
+    city: "Las Vegas",
+    serviceAreas: ["Las Vegas", "Summerlin", "Henderson", "Boulder City"],
+    license: "Licensed & Insured",
+    since: "2010",
+    google_rating: "4.9",
+    review_count: "200",
+    emergency: false,
+    theme: "navy",
+    niche: "cleaning",
+  },
 
   services: [
-  { icon: "sparkles", title: "Deep Cleaning", desc: "One-time top-to-bottom clean. Perfect for move-in/out, post-construction, or a seasonal fresh start. We leave no corner untouched.", urgent: false },
-  { icon: "calendar", title: "Weekly / Bi-Weekly", desc: "Recurring cleaning on your schedule. Same trusted cleaner every visit. Cancel anytime, no contracts.", urgent: false },
-  { icon: "truck", title: "Move In / Move Out", desc: "Professional clean for your old place or new home. Deposit-back guaranteed or we re-clean free.", urgent: false },
-  { icon: "building", title: "Commercial Cleaning", desc: "Offices, retail spaces, medical facilities. Nightly, weekly, or custom schedule. Bonded and insured.", urgent: false },
-  { icon: "home", title: "Post-Construction", desc: "Dust, debris, paint overspray — we handle it all. Move-in ready within 24 hours of construction.", urgent: false },
-  { icon: "key", title: "Airbnb Turnover", desc: "Between-guest cleaning that earns 5-star reviews. Quick turnaround. Fresh linens. Restock supplies.", urgent: false },
-],
+    { icon: "home", title: "House Cleaning", desc: "Keep your home spotless with our regular and reliable cleaning services.", urgent: false },
+    { icon: "sparkles", title: "AirBnB Cleaning", desc: "Ensure your rental is guest-ready with our efficient and thorough turnover cleaning.", urgent: true },
+    { icon: "droplets", title: "Deep Cleaning", desc: "Experience a truly refreshed home with our comprehensive deep cleaning service.", urgent: false },
+    { icon: "truck", title: "Move Out Cleaning", desc: "Leave your old place immaculate and secure your deposit with our move-out service.", urgent: false },
+    { icon: "briefcase", title: "Office Cleaning", desc: "Maintain a professional and hygienic workspace for your employees and clients.", urgent: false },
+    { icon: "scissors", title: "Home Organization", desc: "Declutter and organize your living spaces for a more functional and peaceful home.", urgent: false }
+  ],
 
   testimonials: [
-  { name: "Michelle B.", location: "Tracy, CA", stars: 5, text: "My house has never been this clean. The team arrived on time, worked methodically, and even cleaned spots I didn't ask for. Subscribing immediately." },
-  { name: "David S.", location: "Stockton, CA", stars: 5, text: "Used them for move-out cleaning. Landlord returned the full deposit with a compliment about the condition. Worth every dollar." },
-  { name: "Airbnb Host A.", location: "Manteca, CA", stars: 5, text: "They turn my unit over in 2 hours no matter the condition. Guests consistently give 5 stars for cleanliness. Best business decision I made." },
-],
+    { name: "Sarah L.", location: "Summerlin, NV", stars: 5, text: "Happy Home Helpers did an amazing job with our move-out clean last month. They were prompt, thorough, and left the apartment sparkling. The landlord was very impressed, and we got our full deposit back without any issues. Highly recommend their efficient and friendly team!" },
+    { name: "Mark T.", location: "Henderson, NV", stars: 5, text: "We use Happy Home Helpers for our weekly house cleaning, and they consistently exceed expectations. The team is always on time, professional, and pays attention to every detail. Coming home to a clean house after a long day is truly a luxury they provide at a fair price." },
+    { name: "Jessica R.", location: "Las Vegas, NV", stars: 5, text: "I needed a deep clean before a big family gathering, and Happy Home Helpers delivered! They transformed my home in just a few hours. The kitchen and bathrooms were immaculate, and even the hard-to-reach spots were spotless. Their service was worth every penny, and I'll definitely be calling them again." }
+  ],
 
   trustBadges: [
-  "Background-Checked Staff", "Fully Insured", "Eco-Friendly Products",
-  "Satisfaction Guarantee", "No Contracts", "5-Star Average"
-],
+    "Licensed & Insured", "Same-Day Service", "5-Star Rated", "100% Guarantee", "Experienced Professionals", "Eco-Friendly Products"
+  ],
 
   stats: [
-  {
-    "value": 4.9,
-    "label": "Google Rating",
-    "suffix": "★",
-    "decimals": 1
-  },
-  {
-    "value": 2615,
-    "label": "Jobs Done",
-    "suffix": "+",
-    "decimals": 0
-  },
-  {
-    "value": 14,
-    "label": "Yrs Experience",
-    "suffix": "+",
-    "decimals": 0
-  }
-],
+    { value: 4.9, label: "Google Rating", suffix: "★", decimals: 1 },
+    { value: 1000, label: "Homes Cleaned", suffix: "+", decimals: 0 },
+    { value: 14, label: "Yrs Experience", suffix: "+", decimals: 0 }
+  ],
 
   reasons: [
-  {
-    "icon": "clock",
-    "title": "Fast Response",
-    "desc": "Same-day service when you need it. We don't keep customers waiting."
-  },
-  {
-    "icon": "dollar-sign",
-    "title": "Upfront Pricing",
-    "desc": "Quote before work starts. The number we say is the number you pay."
-  },
-  {
-    "icon": "award",
-    "title": "Certified Professionals",
-    "desc": "Licensed, insured, and trained. Real expertise on every job."
-  },
-  {
-    "icon": "thumbs-up",
-    "title": "Satisfaction Guarantee",
-    "desc": "100% happy or we come back and make it right. No questions asked."
-  },
-  {
-    "icon": "phone",
-    "title": "AI Reception 24/7",
-    "desc": "AI books cleanings, handles reschedules, and collects post-service reviews via call, text, or WhatsApp. Always on, never misses a lead."
-  },
-  {
-    "icon": "truck",
-    "title": "Fully Equipped",
-    "desc": "Trucks stocked with everything needed. First-visit completion rate above 90%."
-  }
-],
+    { icon: "clock", title: "Fast Response", desc: "We respond quickly to your cleaning needs, often offering same-day service." },
+    { icon: "dollar-sign", title: "Upfront Pricing", desc: "No surprises! We provide clear, honest pricing before any work begins." },
+    { icon: "award", title: "Certified Pros", desc: "Our cleaning technicians are trained, certified, and dedicated to excellence." },
+    { icon: "thumbs-up", title: "Satisfaction Guarantee", desc: "We stand by our work; if you're not happy, we'll make it right." },
+    { icon: "phone", title: "Easy Booking 24/7", desc: "Schedule your cleaning anytime, anywhere with our convenient online system." },
+    { icon: "shield-check", title: "Trusted & Vetted", desc: "All our staff are thoroughly background-checked for your peace of mind." }
+  ],
 
-  formServiceOptions: [
-  "Deep Cleaning",
-  "Weekly / Bi-Weekly",
-  "Move In / Move Out",
-  "Commercial Cleaning",
-  "Post-Construction",
-  "Airbnb Turnover"
-],
+  formServiceOptions: ["House Cleaning", "AirBnB Cleaning", "Deep Cleaning", "Move Out Cleaning", "Move In Cleaning", "Maid Services", "Apartment Cleaning", "Post Construction Cleaning", "Carpet Cleaning", "Upholstery Cleaning", "Home Organization", "Janitorial Services", "Commercial Cleaning", "Office Cleaning"]
 }
 
-// Backward compat re-exports
+// Backward-compat re-exports
 export const BUSINESS = config.business
 export const SERVICES = config.services!
 export const TESTIMONIALS = config.testimonials!
